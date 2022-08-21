@@ -1,0 +1,4 @@
+set(HEADER_FILES TicketOffice.h)
+set(SOURCE_FILES TicketOffice.cpp)
+
+add_library(TicketOffice_lib STATIC  ${SOURCE_FILES} ${HEADER_FILES})

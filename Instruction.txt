@@ -1,0 +1,9 @@
+Build with command
+
+mkdir build
+cd build
+conan install .. -s compiler="Visual Studio" -s compiler.version=17 --build missing
+
+cmake -DCMAKE_MODULE_PATH="$(pwd)" ..
+
+cmake --build . --config Release
